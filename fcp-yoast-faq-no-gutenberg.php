@@ -20,7 +20,7 @@ class FCPYoastFAQPostType {
 
     public function __construct() {
 
-        add_action( 'init', [ $this, 'start' ], 0 );
+        add_action( 'plugins_loaded', [ $this, 'start' ] );
 
 	}
 	
